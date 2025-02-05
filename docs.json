@@ -14,14 +14,27 @@
         "tab": "Documentation",
         "groups": [
           {
-            "group": "LearnLedger Docs",
+            "group": "Getting Started",
             "pages": [
-              "docs/01-introduction-overview",
+              "docs/00-quickstart",
+              "docs/01-introduction-overview"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
               "docs/02-platform-fundamentals-terminology",
-              "docs/03-tokenomics",
               "docs/04-protocol-features-sbt-integration",
-              "docs/06-partnerships-integrations",
-              "docs/07-faq"
+              "docs/03-tokenomics",
+              "docs/05-roadmap",
+              "docs/06-partnerships-integrations"
+            ]
+          },
+          {
+            "group": "Support",
+            "pages": [
+              "docs/07-faq",
+              "docs/08-support-contact"
             ]
           }
         ]
