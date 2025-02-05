@@ -14,11 +14,14 @@
         "tab": "Documentation",
         "groups": [
           {
-            "group": "Introduction",
+            "group": "LearnLedger Docs",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
+              "docs/01-introduction-overview",
+              "docs/02-platform-fundamentals-terminology",
+              "docs/03-tokenomics",
+              "docs/04-protocol-features-sbt-integration",
+              "docs/06-partnerships-integrations",
+              "docs/07-faq"
             ]
           }
         ]
@@ -45,8 +48,8 @@
   "footer": {
     "socials": {
       "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/LearnLedger",
+      "linkedin": "https://www.linkedin.com/company/learn-ledger/"
     }
   }
 }
