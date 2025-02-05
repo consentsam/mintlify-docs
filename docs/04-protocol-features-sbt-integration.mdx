@@ -1,0 +1,33 @@
+---
+title: Protocol Features & SBT Integration
+description: 
+---
+
+
+LearnLedger’s main innovations are **token staking for enrollment** and **SBT issuance for completion**. Below is a closer look at these features in action.
+
+## Course Enrollment Flow
+
+1. **Select a Course** on a partner platform.  
+2. **Connect Wallet**: The learner’s wallet must hold sufficient LLEDU to stake.  
+3. **Stake Tokens**: Upon enrollment, the required tokens are locked in the smart contract.  
+4. **Learning Progress**: As the student completes modules, the partner platform calls LearnLedger APIs to update on-chain progress.
+
+## On-Chain Progress Tracking
+
+- **Milestone Checkpoints**: If a course has multiple modules, partial unlocking can occur upon each milestone.  
+- **Security & Transparency**: Because it’s on-chain, learners can view their staked vs. unlocked token balances in real time.
+
+## SBT Issuance
+
+1. **Completion Trigger**: Once the final module is completed, the partner platform sends a “course finished” signal to our protocol.  
+2. **SBT Minting**: A non-transferable token is minted to the learner’s wallet, permanently recording their achievement.  
+3. **Zero Financial Cost**: The learner’s staked LLEDU is returned, making it effectively free (assuming full completion).
+
+## Platform Implementation Notes
+
+- **API Endpoints**: Partner platforms integrate using REST calls to update progress.  
+- **Smart Contracts**: The staking and SBT contracts are the backbone. They handle token logic, ensure immutability, and automate refunds or partial unlocking.
+
+> **Why Soulbound?**  
+> We use SBTs (Soulbound Tokens) instead of regular NFTs to ensure the credential remains tied to the original learner—no resale, no fraudulent transfers.

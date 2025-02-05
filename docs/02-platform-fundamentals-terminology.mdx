@@ -1,0 +1,36 @@
+---
+title: Platform Fundamentals & Terminology
+description: Key concepts, token details, and terms used in LearnLedger
+---
+
+# Platform Fundamentals & Terminology
+
+This section defines the core building blocks of LearnLedger and the unique terms you’ll encounter.
+
+## LLEDU Token
+
+- **Native Token**: LLEDU is the backbone of our platform. Instead of paying a course fee, learners stake LLEDU when they enroll.  
+- **Returning Staked Tokens**: Upon completion, the staked tokens are unlocked and returned to the learner’s wallet.  
+- **Partial Refunds**: If a student doesn’t finish the course, some or all tokens might remain locked (which then returned to the protocol) or be partially refunded.
+
+## Soulbound Tokens (SBTs)
+
+- **Non-Transferable Credentials**: SBTs are on-chain proof of course completion. They can’t be sold or moved to another wallet.  
+- **Issued on Completion**: As soon as the student completes the course, the SBT is minted into the learner’s wallet.  
+- **Verifiable Achievements**: Potential employers or educators can verify these SBTs on-chain, ensuring the authenticity of credentials.
+
+## Roles in the Ecosystem
+
+- **Learners**: Individuals who stake LLEDU to access course content.  
+- **Educators/Content Creators**: Provide courses and content; in later phases, they may receive LLEDU rewards for high-quality content.  
+- **Partner Platforms**: Edtech sites or learning management systems (LMS) that integrate LearnLedger’s staking and SBT issuance.  
+
+## Progress Sync
+
+- **API Calls**: Partner platforms periodically call our API to update the learner’s progress.  
+- **Smart Contract Updates**: Each API call triggers on-chain updates to reflect new token statuses (staked, unlocked, withdrawable).
+
+> **Key Terms Quick Reference**  
+> - **Staked Tokens**: Temporarily locked when a learner enrolls.  
+> - **Unlocked Tokens**: Freed up after certain milestones.  
+> - **Withdrawable Tokens**: Fully accessible tokens ready to be reused or withdrawn.
